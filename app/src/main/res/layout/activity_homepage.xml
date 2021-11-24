@@ -1,88 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smle"
-    tools:context=".homepage">
+    android:orientation="vertical"
+    tools:context=".Homepage">
+
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="270dp"
-        android:layout_height="174dp"
-        android:background="#E4EF6C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="231dp"
-        android:layout_height="32dp"
-        android:background="#78CFF6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Joke Of The Day"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/txtJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/addjoke"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnNextJoke"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+ Add Joke"
-        android:onClick="addingjoke"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
+        android:layout_margin="20dp"
+        android:text="More Jokes" />
 
-    <Button
-        android:id="@+id/morejokes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="More Jokes"
-        android:onClick="morejokes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
-
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGOUT"
-        android:onClick="log"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
-
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="236dp"
-        android:layout_height="45dp"
-        android:background="#78CFF6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695"
-        tools:ignore="SpeakableTextPresentCheck" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

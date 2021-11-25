@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.mileset.SmileMaker.controller.PostHandler;
-import com.mileset.SmileMaker.modal.Utils;
+import com.example.smilemaker.controller.PostHandler;
+import com.example.smilemaker.modal.Utils;
 
 
 public class writepost extends AppCompatActivity {
@@ -55,7 +55,7 @@ public class writepost extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(WritePost.this,
+                Intent i = new Intent(writepost.this,
                         WallActivity.class);
                 //Intent is used to switch from one activity to another.
                 startActivity(i);

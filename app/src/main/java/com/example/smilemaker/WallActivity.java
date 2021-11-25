@@ -54,7 +54,7 @@ public class WallActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(WallActivity.this,
-                        WritePost.class);
+                        writepost.class);
                 //Intent is used to switch from one activity to another.
 
                 startActivity(i);

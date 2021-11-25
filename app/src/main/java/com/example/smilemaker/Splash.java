@@ -36,14 +36,14 @@ public class Splash extends AppCompatActivity {
                 String userLoginStatus = Loginprefs.getString("userLoginStatus", "not found");
                 if (userLoginStatus.equals("yes")) {
                     //the user is login
-                    Intent i = new Intent(Splash.this, SingleJoke.class);
+                    Intent i = new Intent(Splash.this, Homepage.class);
                     //    i.putExtra("joke", id);
 
                     startActivity(i);
 
                 } else {
                     Intent i = new Intent(Splash.this,
-                            loginActivity.class);
+                            MainActivity.class);
                     //Intent is used to switch from one activity to another.
 
                     startActivity(i);

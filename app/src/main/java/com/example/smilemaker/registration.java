@@ -10,7 +10,7 @@ import android.widget.Toast;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textview.MaterialTextView;
-import com.example.Smilemaker.controller.DBHandler;
+import com.example.smilemaker.controller.DBHandler;
 
 public class registration extends AppCompatActivity {
     private MaterialButton btnRegister;

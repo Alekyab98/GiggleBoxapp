@@ -1,4 +1,4 @@
-package com.mileset.SmileMaker.modal;
+package com.example.smilemaker.modal;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

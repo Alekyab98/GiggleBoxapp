@@ -33,7 +33,7 @@ public class Homepage extends AppCompatActivity {
         btnNextJoke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SingleJoke.this, WallActivity.class);
+                Intent i = new Intent(Homepage.this, WallActivity.class);
                 //    i.putExtra("joke", id);
                 startActivity(i);
 

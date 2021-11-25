@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmileMaker">
         <activity
-            android:name=".WallActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Splash"
+            android:name=".writepost"
             android:exported="true" />
         <activity
             android:name=".viewAllJokes"

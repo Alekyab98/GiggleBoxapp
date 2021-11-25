@@ -9,9 +9,9 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.mileset.SmileMaker.FacebookFeedModal;
-import com.mileset.SmileMaker.modal.User;
-import com.mileset.SmileMaker.modal.Utils;
+import com.example.smilemaker.FacebookFeedModal;
+import com.example.smilemaker.modal.User;
+import com.example.smilemaker.modal.Utils;
 
 import java.util.ArrayList;
 

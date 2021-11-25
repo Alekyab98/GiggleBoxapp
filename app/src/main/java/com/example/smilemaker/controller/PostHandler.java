@@ -7,10 +7,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
-import com.mileset.SmileMaker.FacebookFeedModal;
-import com.mileset.SmileMaker.modal.Posts;
-import com.mileset.SmileMaker.modal.User;
-import com.mileset.SmileMaker.modal.Utils;
+import com.example.smilemaker.FacebookFeedModal;
+import com.example.smilemaker.modal.Posts;
+import com.example.smilemaker.modal.User;
+import com.example.smilemaker.modal.Utils;
 
 import java.util.ArrayList;
 import java.util.Random;

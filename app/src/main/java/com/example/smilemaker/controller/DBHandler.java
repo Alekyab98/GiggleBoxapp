@@ -6,9 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.mileset.SmileMaker.FacebookFeedModal;
-import com.mileset.SmileMaker.modal.Jokes;
-import com.mileset.SmileMaker.modal.User;
+import com.example.smilemaker.FacebookFeedModal;
+import com.example.smilemaker.modal.Jokes;
+import com.example.smilemaker.modal.User;
 
 import java.util.ArrayList;
 

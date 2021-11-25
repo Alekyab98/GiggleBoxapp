@@ -1,4 +1,4 @@
-package com.mileset.SmileMaker;
+package com.example.smilemaker;
 
 import java.util.Random;
 

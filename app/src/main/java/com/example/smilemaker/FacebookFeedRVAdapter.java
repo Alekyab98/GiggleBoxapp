@@ -1,4 +1,4 @@
-package com.mileset.SmileMaker;
+package com.example.smilemaker;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -21,9 +21,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mileset.SmileMaker.controller.CommentHandler;
-import com.mileset.SmileMaker.controller.PostHandler;
-import com.mileset.SmileMaker.modal.Utils;
+import com.example.smilemaker.controller.CommentHandler;
+import com.example.smilemaker.controller.PostHandler;
+import com.example.smilemaker.modal.Utils;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -124,7 +124,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
                 @Override
                 public void onClick(View v) {
                     //Toast.makeText(context.getApplicationContext(), postID.getText().toString().trim(), Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(context.getApplicationContext(), CommentsActivity.class);
+                    Intent i = new Intent(context.getApplicationContext(), comments.class);
                     i.putExtra("commentID", postID.getText().toString().trim());
                     context.startActivity(i);
                 }
@@ -135,7 +135,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(context.getApplicationContext(),
-                            EditActivity.class);
+                            edit.class);
 
                     i.putExtra("jokeId", postID.getText().toString().trim());
                     i.putExtra("joke", descTV.getText().toString().trim());
@@ -194,7 +194,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
                 @Override
                 public void onClick(View v) {
                     //Toast.makeText(context.getApplicationContext(), postID.getText().toString().trim(), Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(context.getApplicationContext(), CommentsActivity.class);
+                    Intent i = new Intent(context.getApplicationContext(), comments.class);
                     i.putExtra("postID", postID.getText().toString().trim());
                     context.startActivity(i);
                 }

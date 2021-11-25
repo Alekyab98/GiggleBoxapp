@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmileMaker">
         <activity
-            android:name=".MainActivity2"
+            android:name=".Splash"
             android:exported="true" />
         <activity
             android:name=".edit"
@@ -22,10 +22,10 @@
             android:name=".writepost"
             android:exported="true" />
         <activity
-            android:name=".viewAllJokes"
+            android:name=".WallActivity"
             android:exported="true" />
         <activity
-            android:name=".homepage"
+            android:name=".Homepage"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".loginActivity" />
+        <activity android:name=".registration" />
     </application>
 
 </manifest>

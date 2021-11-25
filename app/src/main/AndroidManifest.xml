@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmileMaker">
         <activity
+            android:name=".edit"
+            android:exported="true" />
+        <activity
+            android:name=".comments"
+            android:exported="true" />
+        <activity
             android:name=".writepost"
             android:exported="true" />
         <activity

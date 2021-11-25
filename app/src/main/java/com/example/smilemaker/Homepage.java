@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.example.smilemaker.modal.Jokes;
 
-public class SingleJoke extends AppCompatActivity {
+public class Homepage extends AppCompatActivity {
     String joke;
     Button btnNextJoke;
     TextView txtJoke;

@@ -19,9 +19,6 @@
             android:name=".homepage"
             android:exported="true" />
         <activity
-            android:name=".addjoke"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

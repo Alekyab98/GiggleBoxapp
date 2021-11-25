@@ -14,7 +14,7 @@ import com.mileset.SmileMaker.controller.PostHandler;
 import com.mileset.SmileMaker.modal.Utils;
 
 
-public class WritePost extends AppCompatActivity {
+public class writepost extends AppCompatActivity {
     Button backButton, post;
     PostHandler db;
     EditText writePost;

@@ -12,7 +12,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textview.MaterialTextView;
 import com.example.Smilemaker.controller.DBHandler;
 
-public class MainActivity extends AppCompatActivity {
+public class registration extends AppCompatActivity {
     private MaterialButton btnRegister;
     MaterialTextView btnLinkToLogin;
     TextInputEditText fname, uname, pass1, pass2;

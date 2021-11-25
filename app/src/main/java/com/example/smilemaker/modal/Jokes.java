@@ -1,7 +1,5 @@
 package com.example.smilemaker.modal;
 
-import com.example.smilemaker.FacebookFeedModal;
-
 import java.util.ArrayList;
 import java.util.Random;
 

@@ -29,7 +29,7 @@
             android:id="@+id/fullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_name"
+            android:hint="Name"
             android:inputType="textEmailAddress"
             android:padding="20dp" />
 
@@ -50,7 +50,7 @@
             android:id="@+id/uname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_username"
+            android:hint="UserName"
             android:inputType="text"
             android:padding="20dp" />
 
@@ -71,7 +71,7 @@
             android:id="@+id/pass1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
+            android:hint="Password"
             android:inputType="textPassword|textVisiblePassword"
             android:padding="20dp" />
 
@@ -92,7 +92,7 @@
             android:id="@+id/pass2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_confirm_password"
+            android:hint="Confirm Password"
             android:inputType="textPassword|textVisiblePassword"
             android:padding="20dp" />
 
@@ -148,9 +148,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/register"
+        android:text="Register"
         android:textColor="@color/white"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/genderLayout" />
@@ -161,7 +161,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
-        android:text="@string/btn_link_to_login"
+        android:text="Go to login"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

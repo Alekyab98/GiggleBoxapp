@@ -62,7 +62,7 @@
                 android:id="@+id/editButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/edit16"
+                android:src="@drawable/edit"
                 android:visibility="visible"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -73,7 +73,7 @@
                 android:layout_height="35dp"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                android:src="@drawable/delete16"
+                android:src="@drawable/delete"
                 android:visibility="visible"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 

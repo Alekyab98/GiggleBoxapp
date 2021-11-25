@@ -1,4 +1,4 @@
-package com.mileset.SmileMaker.controller;
+package com.example.smilemaker.controller;
 
 import android.content.ContentValues;
 import android.content.Context;

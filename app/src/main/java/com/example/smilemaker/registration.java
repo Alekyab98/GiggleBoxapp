@@ -27,7 +27,7 @@ public class registration extends AppCompatActivity {
         uname = findViewById(R.id.uname);
         pass1 = findViewById(R.id.pass1);
         pass2 = findViewById(R.id.pass2);
-        dbHandler = new DBHandler(MainActivity.this);
+        dbHandler = new DBHandler(registration.this);
         btnRegister = findViewById(R.id.button_register);
         btnLinkToLogin = findViewById(R.id.button_login);
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -40,16 +40,16 @@ public class registration extends AppCompatActivity {
                 dbHandler.addNewCourse(u_name, f_name, pass_1, pass_2);
 
                 // after adding the data we are displaying a toast message.
-                Toast.makeText(MainActivity.this, "User has been added.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(registration.this, "User has been added.", Toast.LENGTH_SHORT).show();
 
 
-                Intent i = new Intent(MainActivity.this, LoginMainActivity.class);
+                Intent i = new Intent(registration.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }
         });
         btnLinkToLogin.setOnClickListener(view -> {
-            Intent i = new Intent(MainActivity.this, LoginMainActivity.class);
+            Intent i = new Intent(registration.this, MainActivity.class);
 
             startActivity(i);
             finish();

@@ -8,22 +8,23 @@ This app will display the jokes to the user. User can add the jokes to the app.
   <li>Sqlite - To store the jokes as a database</li>
 </ol>
     
-  ## Team Members(Group-9):
+## Team Members(Group-9):
   <div>
     <ol>
       <li> Manoj Nuvvala </li>     
       <li> Sai Kiran Enugala </li>
       <li> Satya Gullapalli </li>
       <li> Alekya Billakanti </li>
-    </ol
+    </ol>
   </div>
       
- ## Test credentials:
-      <div>
-        Usesr must register with app (We used a static login for the app).   
-      </div>
+## Test credentials:
+    
+Usesr must register with app (We used a static login for the app).
       
 ## Apk file 
+
+[APK DOWNLOAD](https://github.com/Alekyab98/SmileMakerapp/tree/master/debug)
       
       
     

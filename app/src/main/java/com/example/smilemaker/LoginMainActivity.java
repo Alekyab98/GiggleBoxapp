@@ -1,0 +1,84 @@
+package com.example.smilemaker;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.smilemaker.controller.DBHandler;
+import com.example.smilemaker.modal.User;
+import com.example.smilemaker.modal.Utils;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textview.MaterialTextView;
+
+public class LoginMainActivity extends AppCompatActivity {
+    private MaterialButton btnLogin;
+    TextInputEditText uname1, pass3;
+    private DBHandler dbHandler;
+    MaterialTextView button_register, button_forgot;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+
+        setContentView(R.layout.activity_login_main);
+        dbHandler = new DBHandler(LoginMainActivity.this);
+
+        button_register = findViewById(R.id.button_register);
+        button_forgot=findViewById(R.id.button_forgot);
+        button_forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginMainActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+        uname1 = findViewById(R.id.uname1);
+        pass3 = findViewById(R.id.pass3);
+
+
+        button_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginMainActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnLogin = findViewById(R.id.button_login);
+        // Hide Keyboard
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        btnLogin.setOnClickListener(view -> {
+
+            String uid = uname1.getText().toString();
+            String password = pass3.getText().toString();
+
+            try {
+                User u = dbHandler.getUserFromUid(uid);
+                Toast.makeText(getApplicationContext(), "" + u.getPassword(), Toast.LENGTH_SHORT).show();
+
+                SharedPreferences.Editor editor = getSharedPreferences(Utils.PREF_NAME, MODE_PRIVATE).edit();
+                editor.putString("userLoginStatus", "yes");
+                editor.putString("name", u.getFname());//full name
+                editor.putString("uname", u.getUname());//username
+                editor.apply();
+
+                Intent i = new Intent(LoginMainActivity.this, SingleJoke.class);
+                startActivity(i);
+            } catch (Exception ex) {
+                Toast.makeText(getApplicationContext(), "Invalid User", Toast.LENGTH_SHORT).show();
+                ex.printStackTrace();
+
+            }
+        });
+
+    }
+}

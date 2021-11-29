@@ -124,7 +124,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
                 @Override
                 public void onClick(View v) {
                     //Toast.makeText(context.getApplicationContext(), postID.getText().toString().trim(), Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(context.getApplicationContext(), comments.class);
+                    Intent i = new Intent(context.getApplicationContext(), CommentsActivity.class);
                     i.putExtra("commentID", postID.getText().toString().trim());
                     context.startActivity(i);
                 }
@@ -135,7 +135,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(context.getApplicationContext(),
-                            edit.class);
+                            EditActivity.class);
 
                     i.putExtra("jokeId", postID.getText().toString().trim());
                     i.putExtra("joke", descTV.getText().toString().trim());
@@ -194,7 +194,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
                 @Override
                 public void onClick(View v) {
                     //Toast.makeText(context.getApplicationContext(), postID.getText().toString().trim(), Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(context.getApplicationContext(), comments.class);
+                    Intent i = new Intent(context.getApplicationContext(), CommentsActivity.class);
                     i.putExtra("postID", postID.getText().toString().trim());
                     context.startActivity(i);
                 }

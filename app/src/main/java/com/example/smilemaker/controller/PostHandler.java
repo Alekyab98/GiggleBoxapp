@@ -8,12 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 import com.example.smilemaker.FacebookFeedModal;
-import com.example.smilemaker.modal.Posts;
 import com.example.smilemaker.modal.User;
 import com.example.smilemaker.modal.Utils;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class PostHandler extends SQLiteOpenHelper {
 
@@ -167,7 +165,7 @@ public class PostHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM " + WALLPOST_TBL, null);
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM " + WALLPOST_TBL+" order by wid desc", null);
         User u = null;
         for (cursorCourses.moveToFirst(); !cursorCourses.isAfterLast(); cursorCourses.moveToNext()) {
 

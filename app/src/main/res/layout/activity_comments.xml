@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".comments">
+    tools:context=".CommentsActivity">
 
     <EditText
         android:id="@+id/txtComment"
@@ -16,7 +16,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
@@ -32,13 +32,15 @@
             android:layout_gravity="right"
             android:layout_marginLeft="30dp"
             android:text="Post Comment" />
+
     </LinearLayout>
 
     <ListView
         android:id="@+id/listComments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:visibility="visible" />
 
 
 </LinearLayout>

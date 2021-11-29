@@ -1,35 +1,26 @@
 package com.example.smilemaker;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.smilemaker.controller.PostHandler;
-import com.example.smilemaker.modal.Jokes;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.example.smilemaker.modal.Utils;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class WallActivity extends AppCompatActivity {
-
+    FloatingActionButton logout;
     // creating variables for our requestqueue,
     // array list, progressbar, edittext,
     // image button and our recycler view.
@@ -46,15 +37,33 @@ public class WallActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wall);
         db = new PostHandler(getApplicationContext());
-
+        logout = findViewById(R.id.logout);
         // initializing our views.
         progressBar = findViewById(R.id.idLoadingPB);
         editPost = findViewById(R.id.editPost);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences.Editor editor = getSharedPreferences(Utils.PREF_NAME, MODE_PRIVATE).edit();
+                editor.clear();
+                editor.commit();
+
+                Intent i = new Intent(WallActivity.this,
+                        LoginMainActivity.class);
+                //Intent is used to switch from one activity to another.
+
+                startActivity(i);
+
+            }
+        });
+
+
         editPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(WallActivity.this,
-                        writepost.class);
+                        WritePost.class);
                 //Intent is used to switch from one activity to another.
 
                 startActivity(i);

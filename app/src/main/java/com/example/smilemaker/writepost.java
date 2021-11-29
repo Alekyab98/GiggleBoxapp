@@ -14,7 +14,7 @@ import com.example.smilemaker.controller.PostHandler;
 import com.example.smilemaker.modal.Utils;
 
 
-public class writepost extends AppCompatActivity {
+public class WritePost extends AppCompatActivity {
     Button backButton, post;
     PostHandler db;
     EditText writePost;
@@ -22,7 +22,7 @@ public class writepost extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_writepost);
+        setContentView(R.layout.activity_write_post);
         db = new PostHandler(getApplicationContext());
 
         writePost = findViewById(R.id.writePost);
@@ -55,7 +55,7 @@ public class writepost extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(writepost.this,
+                Intent i = new Intent(WritePost.this,
                         WallActivity.class);
                 //Intent is used to switch from one activity to another.
                 startActivity(i);

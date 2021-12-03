@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Joke Of The Day"
-
         android:textAlignment="center"
         android:textColor="@color/black" />
 

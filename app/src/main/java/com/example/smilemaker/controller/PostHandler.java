@@ -8,10 +8,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 import com.example.smilemaker.FacebookFeedModal;
+import com.example.smilemaker.modal.Posts;
 import com.example.smilemaker.modal.User;
 import com.example.smilemaker.modal.Utils;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class PostHandler extends SQLiteOpenHelper {
 

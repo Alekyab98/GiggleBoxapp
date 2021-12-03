@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -74,6 +75,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
             holder.delButton.setVisibility(View.GONE);
         }
 */
+
         CommentHandler db11 = new CommentHandler(context);
         int i = db11.countComments(modal.getpId());
         System.out.println("count: " + i);
@@ -91,7 +93,7 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
     public class ViewHolder extends RecyclerView.ViewHolder {
         // creating variables for our views
         // of recycler view items.
-        ImageView imgComment;
+        ImageView imgComment, imgLikes;
         ImageButton delButton, editButton;
         private CircleImageView authorIV;
         private TextView authorNameTV, timeTV, descTV, postID;
@@ -111,11 +113,18 @@ public class FacebookFeedRVAdapter extends RecyclerView.Adapter<FacebookFeedRVAd
             timeTV = itemView.findViewById(R.id.idTVTime);
             descTV = itemView.findViewById(R.id.idTVDescription);
             imgComment = itemView.findViewById(R.id.imgComment);
+            imgLikes=itemView.findViewById(R.id.imgLikes);
             postID = itemView.findViewById(R.id.postID);
             //  postIV = itemView.findViewById(R.id.idIVPost);
             //likesTV = itemView.findViewById(R.id.idTVLikes);
             commentsTV = itemView.findViewById(R.id.idTVComments);
-
+            imgLikes.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                 //   Toast.makeText(context,"clicked",Toast.LENGTH_SHORT).show();
+                    imgLikes.setImageResource(R.drawable.liked);
+                }
+            });
 
             //         commentsTV.setText(i);
 //Toast.makeText(context,list.size(),Toast.LENGTH_SHORT).show();

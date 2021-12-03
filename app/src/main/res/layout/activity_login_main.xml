@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:text="LOGIN"
+                android:text="Login"
                 android:textColor="@color/white"
                 app:backgroundTint="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"

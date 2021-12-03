@@ -1,5 +1,7 @@
 package com.example.smilemaker;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,14 +10,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.smilemaker.controller.DBHandler;
-import com.example.smilemaker.modal.User;
-import com.example.smilemaker.modal.Utils;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textview.MaterialTextView;
+import com.example.smilemaker.controller.DBHandler;
+import com.example.smilemaker.modal.User;
+import com.example.smilemaker.modal.Utils;
 
 public class LoginMainActivity extends AppCompatActivity {
     private MaterialButton btnLogin;

@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class Utils {
 
+
     private static User user;
     public static String PREF_NAME = "ALUMINI_PREF";
 

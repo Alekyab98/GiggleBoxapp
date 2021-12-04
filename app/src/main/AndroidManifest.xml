@@ -13,19 +13,19 @@
             android:name=".Splash"
             android:exported="true" />
         <activity
-            android:name=".edit"
+            android:name=".EditActivity"
             android:exported="true" />
         <activity
-            android:name=".comments"
+            android:name=".CommentsActivity"
             android:exported="true" />
         <activity
-            android:name=".writepost"
+            android:name=".WritePost"
             android:exported="true" />
         <activity
             android:name=".WallActivity"
             android:exported="true" />
         <activity
-            android:name=".Homepage"
+            android:name=".LoginMainActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
@@ -36,7 +36,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".registration" />
+        <activity android:name=".SingleJoke" />
+
     </application>
 
 </manifest>

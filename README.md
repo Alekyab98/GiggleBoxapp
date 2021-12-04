@@ -25,6 +25,9 @@ Usesr must register with app (We used a static login for the app).
 ## Apk file 
 
 [APK DOWNLOAD](https://github.com/Alekyab98/SmileMakerapp/tree/master/debug)
+
+## Sequence Info
+<p> Registration -> Login -> HomePage -> More Jokes -> Add Joke -> More Jokes -> Logout </p>
       
       
     

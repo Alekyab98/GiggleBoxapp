@@ -28,6 +28,8 @@ Usesr must register with app (We used a static login for the app).
 
 ## Sequence Info
 <p> Registration -> Login -> HomePage -> More Jokes -> Add Joke -> More Jokes -> Logout </p>
+## Instuctions for Building/Running App
+<p> Make sure you have latest JDK version(JDK1.8)
       
       
     
